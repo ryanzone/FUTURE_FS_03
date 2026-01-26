@@ -1,0 +1,166 @@
+:root {
+  --bg: #050505;
+  --card: #0f0f0f;
+  --neon: #39ff14;
+  --text: #ffffff;
+  --muted: #aaaaaa;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', sans-serif;
+}
+
+/* NAVBAR */
+nav {
+  position: fixed;
+  width: 100%;
+  padding: 20px 60px;
+  background: rgba(0,0,0,0.7);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  z-index: 100;
+}
+
+.logo {
+  font-family: 'Bebas Neue';
+  font-size: 28px;
+  letter-spacing: 2px;
+  color: var(--neon);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: url("https://images.unsplash.com/photo-1558611848-73f7eb4001a1") center/cover no-repeat;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+}
+
+.hero-content {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-family: 'Bebas Neue';
+  font-size: 90px;
+  color: var(--neon);
+}
+
+.hero h2 {
+  font-family: 'Bebas Neue';
+  font-size: 50px;
+  letter-spacing: 2px;
+}
+
+.buttons {
+  margin-top: 30px;
+}
+
+.btn {
+  padding: 14px 30px;
+  border-radius: 30px;
+  margin: 10px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.primary {
+  background: var(--neon);
+  color: black;
+}
+
+.outline {
+  border: 2px solid var(--neon);
+  color: var(--neon);
+}
+
+/* SECTIONS */
+section {
+  padding: 100px 10%;
+  text-align: center;
+}
+
+.section-title {
+  font-family: 'Bebas Neue';
+  font-size: 48px;
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+}
+
+/* CARDS */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+  gap: 30px;
+}
+
+.card {
+  background: var(--card);
+  padding: 40px;
+  border-radius: 20px;
+  border: 1px solid #1f1f1f;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 30px #39ff1440;
+}
+
+/* GALLERY */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+  gap: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+/* CONTACT */
+.contact-box iframe {
+  width: 100%;
+  height: 300px;
+  margin-top: 30px;
+  border-radius: 20px;
+}
+
+/* FOOTER */
+footer {
+  padding: 30px;
+  text-align: center;
+  color: var(--muted);
+}
