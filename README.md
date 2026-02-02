@@ -2,7 +2,7 @@
 
 ## 📌 Business Overview
 
-Iron Forge Fitness is a local gym located in SRM Nagar, Chennai, serving college students and working professionals looking for strength training, fat loss, and overall fitness.
+Iron Forge Fitness is a local gym located in Chennai, serving college students and working professionals looking for strength training, fat loss, and overall fitness.
 
 ---
 
@@ -48,7 +48,6 @@ I designed and developed a modern, mobile-friendly website that provides:
 - CSS3
 - JavaScript
 - Google Maps Embed
-- GitHub Pages (for hosting)
 
 ---
 
